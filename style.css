@@ -1,0 +1,350 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  transition: .4s ease;
+  
+}
+
+.nav-link-color{
+  font-weight: 600;
+  color: black !important;
+}
+
+.navbar-brand{
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 30px;
+}
+
+.navbar-nav li{
+  margin-left: auto;
+  margin-right:0;
+}
+
+.navbar-nav .rainbow-background{
+  background: linear-gradient(120deg, 
+  #ff7f7f,  /* Soft Red */
+  #ffb27f,  /* Soft Orange */
+  #fff47f,  /* Soft Yellow */
+  #a1e887,  /* Soft Green */
+  #87ceeb,  /* Soft Blue */
+  #c7a4ff,  /* Soft Indigo */
+  #f4aaff   /* Soft Violet */);
+  border-radius: 10px;
+  color: #000000 !important;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input{
+  visibility: hidden;
+}
+
+.label{
+  position: absolute;
+  width: 65px;
+  height: 35px;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+
+.circle{
+  width: 30px;
+  height: 30px;
+  background-color:#fff;
+  border-radius: 50%;
+  top: 3px;
+  position: absolute;
+  left: 3px;
+  animation: toggleOff .4s linear forwards;
+}
+
+.input:checked + .label{
+  background-color: salmon;
+}
+
+.input:checked + .label .circle{
+  animation: toggleOn .4s linear forwards;
+}
+
+@keyframes toggleOn{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(30px);
+  }
+}
+@keyframes toggleOff{
+  0%{
+    transform: translateX(30px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+
+
+/* introduction section */
+.introduction-section{
+  margin-top: 15% !important;
+
+}
+.Introduction_card{
+  text-align: center;
+}
+.Name_Title{
+  font-size: 1.8rem; /* Slightly larger for better prominence */
+  font-weight: bold; /* Name/title differentiation */
+  color: #1A1A1A;
+}
+.career_title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+.Short_Tagline{
+  font-size: 15px;
+  color: #4D4D4D ;
+}
+
+.profile_image{
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+.button{
+  font-size: 12px;
+  margin: 10px;
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Normal shadow */
+  transition: box-shadow 0.2s ease, transform 0.2s ease , transform 0.3s ease;
+}
+.button:hover{
+  transform: translateY(5px);
+  background-color: #555; /* Dark gray for hover effect */
+  color: white;
+}
+.button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Smaller shadow for "pressed" effect */
+  transform: translateY(2px); /* Slight downward shift to mimic button press */
+}
+.card{
+  border: none;
+  background-color: transparent;
+}
+@media(min-width: 991.98px){
+  .navbar-brand {
+    margin-left: 200px !important; 
+  }
+  .navbar-nav{
+    margin-right: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 20px; /* Reduce padding on smaller screens */
+  }
+}
+.img-card{
+  align-items: center;
+}
+.img-card-top{
+  text-align: center;
+}
+
+
+
+
+/* About me Section */
+.Scrolling_effect{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1.4s ease, transform 1.4s ease;
+}
+.animate-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.About_me_container{
+  margin-top: 18%;
+}
+.about-me-heading-card{
+  text-align: center;
+}
+
+.common-para{
+  color: #4D4D4D;
+}
+
+.card-container{
+  text-align: center;
+}
+.card-container h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.card-box{
+  height: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+
+
+
+/* Experience Section */
+.Explore_my_container{
+  text-align: center;
+  margin-top: 18%;
+}
+
+.Experience_box{
+  border: 1px solid black;
+  padding:30px;
+  border-radius:30px;
+  margin-top: 10px;
+}
+.Frontend{
+  text-align: center;
+}
+.Experience_box h1{
+  font-size: 20px;
+  font-weight: bold;
+}
+.Skill_heading{
+  font-size: 16px;
+  font-weight: bold;
+}
+.sub_heading{
+  font-size: 12px;
+}
+
+.Certificates-heading{
+  text-align: center;
+}
+.domain{
+  text-align: center;
+}
+
+
+
+/*  projects section */
+.project_title_container{
+  margin-top: 15%;
+}
+.project_title_container{
+  text-align: center;
+}
+.project_box{
+  width: 100%;
+  height: 460px;
+  border: 1px solid black;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.project_box img{
+  width: 70%;
+  height: 70%;
+  border-radius: 30px;
+}
+.project_box h1{
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.project_box p{
+  font-size: 15px;
+}
+.project_box .btn{
+  background-color: #fff;
+  color: black;
+  border-radius: 50px;
+  font-size: 15px;
+  margin: 0px 5px;
+  border: 1px solid black;
+  outline: none;
+  transition: all 0.3s;
+}
+.project_box .btn:hover{
+  transform: translateY(3px);
+  background-color: #000000; /* Dark gray for hover effect */
+  border: 1px solid black;
+  color: #fff;
+}
+
+
+
+/* CONTACT SECTION */
+.contact_title_container{
+  margin-top: 150px;
+  text-align: center;
+}
+.contact_title_container .get-in-touch-para{
+  font-size: 17px;
+}
+.contact_title_container .contact-heading{
+  font-size: 50px;
+}
+
+.contactContainer{
+  margin: 30px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-address-container{
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  align-items: center;
+}
+.contact-address a{
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease, border-bottom 0.5s ease;
+}
+.contact-address:hover{
+  color: #484848; /* Subtle color change */
+  border-bottom: 2px solid #484848; /* Matching the color change */
+}
+
+
+.copyright-row{
+  margin-top: 20%;
+  text-align: center;
+}
+.copyright-container a{
+  padding: 10px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.copyright{
+  text-align: center;
+}
+.copyright p{
+  font-size: 12px;
+}
+
+
+

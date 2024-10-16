@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/5768f77898.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="bgcontainer">
+
+
+<!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-4 pb-4 mb-5 fixed-top">
+      <a class="navbar-brand nav-link-color" href="#">Prethivi</a>
+      <!-- hamburber button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mr-5" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="#about_me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color rainbow-background" href="./art gallery/art.html">Illustrations / Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-color" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Introduction section -->
+    <div id="home" class="container-fluid introduction-section d-flex flex-row justify-content-center">
+      <div class="row">
+        <div class="card img-card-top col-12 col-md-4 d-block d-md-none">
+          <img class="profile_image m-3" src="./baki.jpg">     
+        </div>
+        <div class="container Introduction_card p-5 col-12 col-md-5">
+          <div class="row">
+            <h1 class="Name_Title  col-12">Hi, Im Pretheeviraj</h1>
+            <p class="career_title  col-12"> Full-Stack Developer & Digital Artist</p>
+            <p class="Short_Tagline  col-12">Blending logic and art to create interactive digital worlds.</p>
+          </div>
+          <div class="row d-flex flex-row justify-content-center">
+              <button class="btn button" id="scrollToExperience">Explore My Work</button>
+              <button class="btn button">Check My Resume</button>
+          </div>
+        </div>
+        <div class="card img-card col-12 col-md-4 d-none d-md-block">
+          <img class="profile_image m-3" src="./baki.jpg">     
+        </div>
+      </div>
+    </div>
+
+
+    <!-- About me Section -->
+    <div  id="about_me" class="container About_me_container">
+      <div class="row">
+        <div  class="about-me-heading-card Scrolling_effect col-12"> 
+            <p class="get_to_know_more mb-0">Get to know more</p>
+            <h1 class="about-me-heading">About Me</h1>
+        </div>
+      </div> 
+      <div class="row card-container p-3">
+        <div class="Scrolling_effect col-12 col-md-6">
+          <div class="card-box">
+            <h1>Experience</h1>
+            <p class="common-para">One Year <br> Web Development</p>
+            <p class="common-para">NxtWave <br> Hands-on Coding & Growth</p>
+          </div>
+        </div>
+        <div class="Scrolling_effect col-12 col-md-6">
+          <div class="card-box">
+            <h1>Education</h1>
+            <p class="common-para">Vels University <br> B.E.Computer Science Engineering</p>
+            <p class="common-para"><span>NxtWave</span> <br> CCBP 4.0 Academy</p>
+          </div>
+        </div>
+        <div class="Scrolling_effect col-12">
+          <p class="common-para mt-5">My journey with NxtWave has been an incredible blend of structured learning and hands-on experience. Through coding challenges, workshops, and projects, I’ve gained solid web development skills and practical knowledge of AI tools. Alongside this, I’ve been working on personal JavaScript mini projects, like creating a color-changing box and a music player, to sharpen my skills in DOM manipulation and API usage. NxtWave's platform and my self-driven JS practice have combined to deepen my understanding and boost my confidence in tackling real-world coding tasks.</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Experience section -->
+    <div id="experience" class="container Scrolling_effect">
+      <div class="row">
+
+        <div class="Explore_my_container col-12 mb-3">
+          <p class="common-para mb-0">Explore my</p>
+          <h1>Experience</h1>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="Experience_box Scrolling_effect">
+            <div class="Frontend">
+              <h1>Frontend Development</h1>
+            </div>
+            <div class="d-flex flex-row justify-content-around mt-4">
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">HTML</span><br><span class="sub_heading common-para">Experienced</span></p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">CSS</span><br><span class="sub_heading common-para">Experienced</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-around mt-4">
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">Bootstrap</span><br><span class="sub_heading common-para">Experienced</span></p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">javascript</span><br><span class="sub_heading common-para">Intermediate</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-md-6">
+          <div class="Experience_box Scrolling_effect">
+            <div class="Frontend">
+              <h1>Backend Development</h1>
+            </div>
+
+            <div class="d-flex flex-row justify-content-around mt-4">
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">MySql</span><br><span class="sub_heading common-para">Intermediate</span></p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">Node js</span><br><span class="sub_heading common-para">Intermediate</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-around mt-4">
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">Express</span><br><span class="sub_heading common-para">Intermediate</span></p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <p><i class="fa-solid fa-square-check"></i></p>
+                <div class="ml-2">
+                  <p><span class="Skill_heading">Git</span><br><span class="sub_heading common-para">Intermediate</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container Scrolling_effect">
+          <div class="row">
+            <div class="Certificates-heading col-12 mt-5 mb-5">
+              <h1>Certificates</h1>
+            </div>
+            <div class="domain Scrolling_effect col-12 col-md-6">
+              <p><i class="fa-solid fa-square-check"></i><span class="Skill_heading ml-2 common-para">Certified by NxtWave for successfully completing the 'Build Your Own Responsive Website' course.</span></p>
+            </div>
+            <div class="domain Scrolling_effect col-12 col-md-6">
+              <p><i class="fa-solid fa-square-check"></i><span class="Skill_heading ml-2 common-para">Excited to complete a project in the Generative AI Mega Workshop 2.0 by NxtWave, earning a Certificate of Project Completion for building a pitch-ready product with 10+ advanced AI tools!</span></p>
+            </div>
+            <div class="domain Scrolling_effect col-12 col-md-6">
+              <p><i class="fa-solid fa-square-check"></i><span class="Skill_heading ml-2 common-para">Thrilled to complete the NxtWave 7-day Coding Challenge! Enhanced my web development and problem-solving skills with HTML, CSS, and Bootstrap.</span></p>
+            </div>
+            <div class="domain Scrolling_effect col-12 col-md-6">
+              <p><i class="fa-solid fa-square-check"></i><span class="Skill_heading ml-2 common-para">Completed my internship at Internpe, which was invaluable for learning web development. I truly enjoyed the experience—thank you, Internpe!</span></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- project section -->
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="project_title_container Scrolling_effect col-12 mb-4">
+            <p class="project_title_subHeading common-para mb-0">Browse my recent personal project</p>
+            <h1 class="project_title_heading">My Projects</h1>
+          </div>
+          <div class="project_box_container Scrolling_effect col-12 col-md-6 col-lg-4 mt-3">
+            <div class="project_box">
+              <img src="./images/quiz_program.png">
+              <h1>Quiz Program</h1>
+              <p class="common-para">Static Web Page</p>
+              <div class="button_card">
+                <button class="btn common-para" id="githubQuizProgram">GitHub</button>
+                <button class="btn common-para" id="QuizProgram">Live Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project_box_container Scrolling_effect col-12 col-md-6 col-lg-4 mt-3">
+            <div class="project_box">
+              <img src="./images/zootopia.png">
+              <h1>Music Player</h1>
+              <p class="common-para">Static Web Page</p>
+              <div class="button_card">
+                <button class="btn common-para" id="githubZootopia">GitHub</button>
+                <button class="btn common-para" id="MusicPlayerZootopia">Live Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project_box_container Scrolling_effect col-12 col-md-6 col-lg-4 mt-3">
+            <div class="project_box">
+              <img src="./images/pillar man.png">
+              <h1>Music Player</h1>
+              <p class="common-para">Static Web Page</p>
+              <div class="button_card">
+                <button class="btn common-para" id="githubJojo">GitHub</button>
+                <button class="btn common-para" id="MusicPlayerJojo">Live Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project_box_container Scrolling_effect col-12 col-md-6 col-lg-4 mt-3">
+            <div class="project_box">
+              <img src="./images/stop watch.png">
+              <h1>Stop Watch</h1>
+              <p class="common-para">Static Web Page</p>
+              <div class="button_card">
+                <button class="btn common-para" id="githubStopWatch">GitHub</button>
+                <button class="btn common-para" id="StopWatchLive">Live Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project_box_container Scrolling_effect col-12 col-md-6 col-lg-4 mt-3">
+            <div class="project_box">
+              <img src="./images/password generator.png">
+              <h1>Password Generator</h1>
+              <p class="common-para">Static Web Page</p>
+              <div class="button_card">
+                <button class="btn common-para" id="githubPasswordGenerator">GitHub</button>
+                <button class="btn common-para" id="PasswordGeneratorLive">Live Demo</button>
+              </div>
+            </div>
+          </div>
+          <div class="project_box_container Scrolling_effect col-12 col-md-6 col-lg-4 mt-3">
+            <div class="project_box">
+              <img src="./images/memory game.png">
+              <h1>Memory Game</h1>
+              <p class="common-para">Static Web Page</p>
+              <div class="button_card">
+                <button class="btn common-para" id="githubMemoryGame">GitHub</button>
+                <button class="btn common-para" id="MemoryGameLive">Live Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <div id="Contact" class="container">
+      <div class="row">
+        <div class="contact_title_container Scrolling_effect col-12">
+          <p class="get-in-touch-para common-para mb-0">Get In Touch</p>
+          <h1 class="contact-heading">Contact Me</h1>
+        </div>
+        <div class="contactContainer Scrolling_effect col-12">
+          <div class="contact-address-container">
+            <p class="p-3 mb-0">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="contact-address">
+                <a href="mailto:Pretheeviraj0805@gmail.com">Pretheeviraj0805@gmail.com</a>
+              </span>
+            </p>
+            <p class="p-3 mb-0">
+              <i class="fa-brands fa-linkedin"></i>
+              <span class="contact-address">
+                <a href="https://www.linkedin.com/in/pretheevi-raj/" target="_blank">LinkedIn</a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row copyright-row ">
+        <div class="copyright-container col-12">
+          <a href="#about_me">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#Contact">Contact</a>
+        </div>
+        <footer class="copyright col-12 mt-4">
+          <p class="common-para">&copy; 2024 Pretheeviraj. All rights reserved.</p>
+        </footer>      
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+</div> <!-- bgContainer End Tags here-->
+  <!-- javascript link tag -->
+  <script src="./script.js"></script>
+</body>
+</html>
